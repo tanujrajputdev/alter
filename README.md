@@ -22,12 +22,6 @@ Copy any text. Press **⌥ Space**. A floating bar appears over your current win
 
 No tab switch. No browser. No account. No subscription.
 
-<div align="center">
-
-<img src="docs/demo-hud.gif" alt="Alter HUD demo" width="720" />
-
-</div>
-
 ---
 
 ## How it works
@@ -43,6 +37,16 @@ No tab switch. No browser. No account. No subscription.
 5. Press Accept — the result pastes directly where your cursor is
 
 You never leave the app you're in.
+
+<div align="center">
+
+<img src="docs/demo-hud.gif" alt="Alter in action — rewrite flow" width="720" />
+
+<br /><br />
+
+<img src="docs/demo-flow.gif" alt="Alter in action — another transform" width="720" />
+
+</div>
 
 ---
 
@@ -64,7 +68,7 @@ A separate menu-bar window for everything that doesn't belong in the HUD:
 
 <div align="center">
 
-<img src="docs/demo-dashboard.gif" alt="Alter Dashboard demo" width="720" />
+<img src="docs/dashboard.png" alt="Alter Dashboard" width="720" />
 
 </div>
 
@@ -77,11 +81,13 @@ A separate menu-bar window for everything that doesn't belong in the HUD:
 
 ## Install
 
-### Option A — download the .dmg
+### Option A — download the .dmg (recommended)
 
-1. Grab the latest `Alter-1.0.0-arm64.dmg` from [Releases](https://github.com/tanujrajputdev/alter/releases)
+1. Open the latest [Release](https://github.com/tanujrajputdev/alter/releases/latest) and grab:
+   - `Alter-1.0.0-arm64.dmg` — Apple Silicon (M1/M2/M3/M4)
+   - `Alter-1.0.0.dmg` — Intel Macs
 2. Open the DMG and drag **Alter** onto the **Applications** folder
-3. First launch: right-click → Open (the build is unsigned)
+3. First launch: **right-click → Open** (the build is unsigned, so Gatekeeper asks once)
 4. Grant Accessibility permission when prompted (needed for auto-paste)
 5. Paste your [Groq API key](https://console.groq.com/keys) on the setup screen
 
