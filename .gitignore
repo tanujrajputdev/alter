@@ -1,0 +1,12 @@
+node_modules/
+dist/
+out/
+.DS_Store
+*.local
+.env
+.env.*
+.claude/
+.idea/
+.vscode/
+*.log
+.github/workflows/

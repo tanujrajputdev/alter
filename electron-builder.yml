@@ -1,0 +1,51 @@
+appId: com.alter.app
+productName: Alter
+copyright: Copyright © 2026
+
+directories:
+  buildResources: resources
+  output: dist
+
+files:
+  - out/**/*
+  - package.json
+  # electron-builder auto-includes production deps from node_modules.
+  # Do NOT add a global node_modules exclusion — it would drop electron-store.
+
+extraResources:
+  - from: resources/tray-icon.png
+    to: tray-icon.png
+  - from: resources/tray-icon@2x.png
+    to: tray-icon@2x.png
+
+mac:
+  category: public.app-category.productivity
+  icon: resources/icon.icns
+  darkModeSupport: true
+  target:
+    - target: dmg
+      arch:
+        - arm64
+        - x64
+  entitlementsInherit: resources/entitlements.mac.plist
+  hardenedRuntime: true
+  gatekeeperAssess: false
+  extendInfo:
+    LSUIElement: true
+    NSAccessibilityUsageDescription: "Alter needs Accessibility access to paste transformed text into your active app."
+
+dmg:
+  sign: false
+  title: "Alter ${version}"
+  iconSize: 100
+  window:
+    width: 540
+    height: 380
+  contents:
+    - x: 140
+      y: 200
+      type: file
+    - x: 400
+      y: 200
+      type: link
+      path: /Applications

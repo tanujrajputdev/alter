@@ -1,0 +1,44 @@
+{
+  "name": "alter",
+  "version": "1.0.0",
+  "description": "Alter — AI lives in your clipboard",
+  "productName": "Alter",
+  "main": "./out/main/index.js",
+  "homepage": "https://github.com/tanujrajputdev/alter",
+  "author": "Tanuj Rajput",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanujrajputdev/alter.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "dist": "npm run build && electron-builder --mac",
+    "dist:arm64": "npm run build && electron-builder --mac --arm64",
+    "dist:x64": "npm run build && electron-builder --mac --x64",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hugeicons/core-free-icons": "^4.2.0",
+    "@hugeicons/react": "^1.1.6",
+    "electron-store": "^8.2.0"
+  },
+  "devDependencies": {
+    "@electron-toolkit/preload": "^3.0.0",
+    "@electron-toolkit/tsconfig": "^2.0.0",
+    "@electron-toolkit/utils": "^3.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0",
+    "electron-vite": "^2.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.8"
+  }
+}
